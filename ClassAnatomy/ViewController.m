@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "Vehicle.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,14 @@
     Person *person1 = [[Person alloc]init];
     person1.firstName = @"Sandra";
     [person1 setLastName:@"Bullocks"];
+    Vehicle *car = [[Vehicle alloc]init];
+    car.model = @"BMW 328i";
+    NSLog(@"Make and Model: %@", car.model);
+    
+    NSString *personFirstName = @"Jack";
+    NSString *personLastName = @"Smith";
+    NSString *fullName = [NSString stringWithFormat:@"%@ %@", personFirstName, personLastName];
+    NSLog(@"%@", fullName);
     
 }
 

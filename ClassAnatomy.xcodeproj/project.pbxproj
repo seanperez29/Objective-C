@@ -14,6 +14,7 @@
 		914CD6221E78DB080007B818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914CD6211E78DB080007B818 /* Assets.xcassets */; };
 		914CD6251E78DB080007B818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914CD6231E78DB080007B818 /* LaunchScreen.storyboard */; };
 		914CD62E1E78DE2B0007B818 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD62D1E78DE2B0007B818 /* Person.m */; };
+		914CD6311E78F8E70007B818 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD6301E78F8E70007B818 /* Vehicle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		914CD6261E78DB080007B818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		914CD62C1E78DE2B0007B818 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		914CD62D1E78DE2B0007B818 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		914CD62F1E78F8E70007B818 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		914CD6301E78F8E70007B818 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				914CD6231E78DB080007B818 /* LaunchScreen.storyboard */,
 				914CD6261E78DB080007B818 /* Info.plist */,
 				914CD6151E78DB080007B818 /* Supporting Files */,
+				914CD62F1E78F8E70007B818 /* Vehicle.h */,
+				914CD6301E78F8E70007B818 /* Vehicle.m */,
 			);
 			path = ClassAnatomy;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				914CD61A1E78DB080007B818 /* AppDelegate.m in Sources */,
 				914CD62E1E78DE2B0007B818 /* Person.m in Sources */,
 				914CD6171E78DB080007B818 /* main.m in Sources */,
+				914CD6311E78F8E70007B818 /* Vehicle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
