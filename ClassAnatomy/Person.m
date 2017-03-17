@@ -15,4 +15,12 @@
     self.firstName = @"Bob";
 }
 
+- (void)speakName {
+    NSLog(@"My name is Jack Davis");
+}
+
++ (void)stateSpecies {
+    NSLog(@"I am a human");
+}
+
 @end

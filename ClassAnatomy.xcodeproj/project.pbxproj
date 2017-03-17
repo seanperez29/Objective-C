@@ -15,6 +15,9 @@
 		914CD6251E78DB080007B818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914CD6231E78DB080007B818 /* LaunchScreen.storyboard */; };
 		914CD62E1E78DE2B0007B818 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD62D1E78DE2B0007B818 /* Person.m */; };
 		914CD6311E78F8E70007B818 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD6301E78F8E70007B818 /* Vehicle.m */; };
+		91BD38BC1E7B5DD1009F8951 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BD38BB1E7B5DD1009F8951 /* Car.m */; };
+		91BD38BF1E7B5E5E009F8951 /* Civic.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BD38BE1E7B5E5E009F8951 /* Civic.m */; };
+		91BD38C31E7B7EAB009F8951 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BD38C21E7B7EAB009F8951 /* Human.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		914CD62D1E78DE2B0007B818 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		914CD62F1E78F8E70007B818 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
 		914CD6301E78F8E70007B818 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		91BD38BA1E7B5DD1009F8951 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		91BD38BB1E7B5DD1009F8951 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		91BD38BD1E7B5E5E009F8951 /* Civic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Civic.h; sourceTree = "<group>"; };
+		91BD38BE1E7B5E5E009F8951 /* Civic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Civic.m; sourceTree = "<group>"; };
+		91BD38C11E7B7EAB009F8951 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		91BD38C21E7B7EAB009F8951 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +57,8 @@
 		914CD6091E78DB080007B818 = {
 			isa = PBXGroup;
 			children = (
+				91BD38C01E7B679C009F8951 /* initStuff */,
+				91BD38B91E7B5DB2009F8951 /* OOP */,
 				914CD6141E78DB080007B818 /* ClassAnatomy */,
 				914CD6131E78DB080007B818 /* Products */,
 			);
@@ -87,6 +98,26 @@
 				914CD6161E78DB080007B818 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91BD38B91E7B5DB2009F8951 /* OOP */ = {
+			isa = PBXGroup;
+			children = (
+				91BD38BA1E7B5DD1009F8951 /* Car.h */,
+				91BD38BB1E7B5DD1009F8951 /* Car.m */,
+				91BD38BD1E7B5E5E009F8951 /* Civic.h */,
+				91BD38BE1E7B5E5E009F8951 /* Civic.m */,
+			);
+			name = OOP;
+			sourceTree = "<group>";
+		};
+		91BD38C01E7B679C009F8951 /* initStuff */ = {
+			isa = PBXGroup;
+			children = (
+				91BD38C11E7B7EAB009F8951 /* Human.h */,
+				91BD38C21E7B7EAB009F8951 /* Human.m */,
+			);
+			name = initStuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,11 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BD38BC1E7B5DD1009F8951 /* Car.m in Sources */,
 				914CD61D1E78DB080007B818 /* ViewController.m in Sources */,
 				914CD61A1E78DB080007B818 /* AppDelegate.m in Sources */,
+				91BD38C31E7B7EAB009F8951 /* Human.m in Sources */,
 				914CD62E1E78DE2B0007B818 /* Person.m in Sources */,
 				914CD6171E78DB080007B818 /* main.m in Sources */,
 				914CD6311E78F8E70007B818 /* Vehicle.m in Sources */,
+				91BD38BF1E7B5E5E009F8951 /* Civic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +358,7 @@
 				914CD62B1E78DB080007B818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
