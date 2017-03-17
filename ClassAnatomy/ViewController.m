@@ -11,10 +11,14 @@
 #import "Vehicle.h"
 #import "Civic.h"
 #import "Human.h"
+#import "Honda.h"
+#import "Honda+SupedUp.h"
+#import "ClassAnatomy-Swift.h"
 
 @interface ViewController ()
 @property (nonatomic) double bankAccount;
 @property (nonatomic) double itemAmount;
+@property (nonatomic,strong) SecondVC *secondVC;
 @end
 
 @implementation ViewController
@@ -73,6 +77,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //HONDA - CATEGORIES
+    
+    Honda *honda = [[Honda alloc]init];
+    [honda addUglySpoiler]; //Need to import Honda+Suped up in order to implement categories. Extensions are similar but can only be performed on your own code when you have the full source code.
+    
+    
     
     [self getName:nil];
     
@@ -217,6 +228,13 @@
     
     
 }
+
+- (IBAction)loadSecondVC:(id)sender {
+    _secondVC = [[SecondVC alloc]init];
+    _secondVC.view.backgroundColor = [UIColor purpleColor];
+    [self presentViewController:_secondVC animated:YES completion:nil];
+}
+
 
 
 - (void)didReceiveMemoryWarning {

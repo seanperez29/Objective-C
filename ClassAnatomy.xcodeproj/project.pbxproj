@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		912BA5981E7B9B330001682C /* Honda.m in Sources */ = {isa = PBXBuildFile; fileRef = 912BA5971E7B9B330001682C /* Honda.m */; };
+		912BA59B1E7B9BF30001682C /* Honda+SupedUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 912BA59A1E7B9BF30001682C /* Honda+SupedUp.m */; };
+		912BA59F1E7BA27C0001682C /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BA59E1E7BA27C0001682C /* SecondVC.swift */; };
 		914CD6171E78DB080007B818 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD6161E78DB080007B818 /* main.m */; };
 		914CD61A1E78DB080007B818 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD6191E78DB080007B818 /* AppDelegate.m */; };
 		914CD61D1E78DB080007B818 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914CD61C1E78DB080007B818 /* ViewController.m */; };
@@ -21,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		912BA5961E7B9B330001682C /* Honda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Honda.h; sourceTree = "<group>"; };
+		912BA5971E7B9B330001682C /* Honda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Honda.m; sourceTree = "<group>"; };
+		912BA5991E7B9BF30001682C /* Honda+SupedUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Honda+SupedUp.h"; sourceTree = "<group>"; };
+		912BA59A1E7B9BF30001682C /* Honda+SupedUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Honda+SupedUp.m"; sourceTree = "<group>"; };
+		912BA59D1E7BA27C0001682C /* ClassAnatomy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClassAnatomy-Bridging-Header.h"; sourceTree = "<group>"; };
+		912BA59E1E7BA27C0001682C /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		914CD6121E78DB080007B818 /* ClassAnatomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassAnatomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		914CD6161E78DB080007B818 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		914CD6181E78DB080007B818 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,9 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		912BA5951E7B9B250001682C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				912BA5961E7B9B330001682C /* Honda.h */,
+				912BA5971E7B9B330001682C /* Honda.m */,
+				912BA5991E7B9BF30001682C /* Honda+SupedUp.h */,
+				912BA59A1E7B9BF30001682C /* Honda+SupedUp.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		912BA59C1E7BA2600001682C /* Swift Controller */ = {
+			isa = PBXGroup;
+			children = (
+				912BA59E1E7BA27C0001682C /* SecondVC.swift */,
+				912BA59D1E7BA27C0001682C /* ClassAnatomy-Bridging-Header.h */,
+			);
+			name = "Swift Controller";
+			sourceTree = "<group>";
+		};
 		914CD6091E78DB080007B818 = {
 			isa = PBXGroup;
 			children = (
+				912BA59C1E7BA2600001682C /* Swift Controller */,
+				912BA5951E7B9B250001682C /* Categories */,
 				91BD38C01E7B679C009F8951 /* initStuff */,
 				91BD38B91E7B5DB2009F8951 /* OOP */,
 				914CD6141E78DB080007B818 /* ClassAnatomy */,
@@ -152,6 +183,7 @@
 					914CD6111E78DB080007B818 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PW5CGBBSUC;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -195,9 +227,12 @@
 				91BD38BC1E7B5DD1009F8951 /* Car.m in Sources */,
 				914CD61D1E78DB080007B818 /* ViewController.m in Sources */,
 				914CD61A1E78DB080007B818 /* AppDelegate.m in Sources */,
+				912BA59B1E7B9BF30001682C /* Honda+SupedUp.m in Sources */,
 				91BD38C31E7B7EAB009F8951 /* Human.m in Sources */,
 				914CD62E1E78DE2B0007B818 /* Person.m in Sources */,
+				912BA59F1E7BA27C0001682C /* SecondVC.swift in Sources */,
 				914CD6171E78DB080007B818 /* main.m in Sources */,
+				912BA5981E7B9B330001682C /* Honda.m in Sources */,
 				914CD6311E78F8E70007B818 /* Vehicle.m in Sources */,
 				91BD38BF1E7B5E5E009F8951 /* Civic.m in Sources */,
 			);
@@ -319,11 +354,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PW5CGBBSUC;
 				INFOPLIST_FILE = ClassAnatomy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanperez.ClassAnatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassAnatomy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -331,11 +370,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PW5CGBBSUC;
 				INFOPLIST_FILE = ClassAnatomy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanperez.ClassAnatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassAnatomy-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
