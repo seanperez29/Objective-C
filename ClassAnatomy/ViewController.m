@@ -59,8 +59,37 @@
     
 }
 
+//WORKING WITH NULL
+
+-(void)getName:(NSString* _Nullable)name {
+    
+}
+
+-(int)sum:(nonnull NSNumber*)numA :(nonnull NSNumber*)numB {
+    int sum = numA.intValue + numB.intValue;
+    return sum;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self getName:nil];
+    
+    NSNumber *num1;
+    NSNumber *num2;
+    
+    int sum = [self sum:num1 :num2];
+    NSLog(@"Sum: %d", sum);
+    
+    if (num1 && num2) {
+        int sum = [self sum:num1 :num2];
+        NSLog(@"Sum: %d", sum);
+    } else {
+        NSLog(@"These are null!");
+    }
+        
+    
     
     Human *plainHuman = [[Human alloc]init];
     [plainHuman printName];
@@ -98,7 +127,7 @@
     int val = age2.intValue; //Can use this to grab a value out of NSNumber and do simple calculations
     int val2 = [age2 intValue]; //This is another syntax of the above
     int val3 = age3.intValue;
-    int sum = val + val3;
+    int sum2 = val + val3;
     NSLog(@"%d", sum);
     NSNumber *numSum = [NSNumber numberWithInt:sum];
     NSArray *numArray = @[age2, age3, numSum];
